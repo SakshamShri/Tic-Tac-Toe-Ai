@@ -46,8 +46,8 @@ Run the game using:
 python runner.py
 ```
 
-- You play as **X**.
-- The AI plays as **O**.
+- You play as **X or O**.
+- **X** always starts first.
 - The AI is **unbeatable** — it will never lose. It will either **win** or **draw**, depending on your moves.
 
 ## How the AI Works
