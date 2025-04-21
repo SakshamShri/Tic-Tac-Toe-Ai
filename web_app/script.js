@@ -95,7 +95,7 @@ function setMove(x, y, player) {
 }
 
 /* *** AI function that choice the best move *** */
-// Read more on https://github.com/Cledersonbc/tic-tac-toe-minimax/
+
 function minimax(state, depth, player) {
 	var best;
 
@@ -210,7 +210,17 @@ function clickedCell(cell) {
 		button.disabled = false;
 	}
 }
+/* Ensure the inner text color of all cells is reset after the first game */
+function resetCellColors() {
+    for (var x = 0; x < 3; x++) {
+        for (var y = 0; y < 3; y++) {
+            var cell = document.getElementById(String(x) + String(y));
+            cell.style.color = "#000"; // Reset to black or desired color
+        }
+    }
+}
 
+resetCellColors();
 /* Restart the game*/
 function restartBnt(button) {
 	if (button.value == "Start AI") {
@@ -218,18 +228,18 @@ function restartBnt(button) {
 		button.disabled = true;
 	}
 	else if (button.value == "Restart") {
-		var htmlBoard;
 		var msg;
 
 		for (var x = 0; x < 3; x++) {
 			for (var y = 0; y < 3; y++) {
 				board[x][y] = 0;
-				htmlBoard = document.getElementById(String(x) + String(y));
+				var htmlBoard = document.getElementById(String(x) + String(y));
 				htmlBoard.style.color = "#444";
 				htmlBoard.innerHTML = "";
 			}
 		}
-		button.value = "Start AI";
+        button.value = "Start AI";
+        resetCellColors();
 		msg = document.getElementById("message");
 		msg.innerHTML = "";
 	}
