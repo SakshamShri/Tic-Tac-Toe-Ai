@@ -1,0 +1,118 @@
+/* ****************** Body, head etc ****************** */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text */
+}
+
+header {
+    background-color: #1F1F1F; /* Darker header */
+    color: #E0E0E0; /* Light text */
+    text-align: center;
+    height: 60px;
+    padding-top: 5px;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+p {
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: Sans;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: #E0E0E0; /* Light text */
+}
+
+a {
+    color: #64B5F6; /* Light blue for links */
+    text-decoration: none;
+}
+a:hover {
+    color: #90CAF9; /* Slightly lighter blue */
+}
+a:visited {
+    color: #64B5F6;
+}
+
+/* ****************** Table style ****************** */
+#tab-tic-tac-toe {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    font-size: 4em;
+    font-family: Sans;
+    color: #E0E0E0; /* Light text */
+    background: #1E1E1E; /* Dark background */
+    width: 310px;
+    height: 300px;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid #333; /* Darker border */
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #000; /* Subtle shadow */
+}
+
+/* Column style */
+#tab-tic-tac-toe td {
+    border-collapse: collapse;
+    border-left: 5px solid #333; /* Darker border */
+    border-bottom: 5px solid #333;
+}
+
+#tab-tic-tac-toe td:first-child {
+    border-left: none;
+}
+
+#tab-tic-tac-toe tr:last-child td {
+    border-bottom: none;
+}
+
+/* Cells */
+#tab-tic-tac-toe td {
+    cursor: pointer;
+    height: 95px;
+    width: 95px;
+    background: #2C2C2C; /* Darker cell background */
+    color: #E0E0E0; /* Light text */
+}
+
+#tab-tic-tac-toe td:hover {
+    background: #424242; /* Slightly lighter hover effect */
+}
+
+/* ****************** Restart Button ****************** */
+#bnt-restart {
+    display: block;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    background: #424242; /* Dark button background */
+    font-size: 1.5em;
+    color: #E0E0E0; /* Light text */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#bnt-restart:hover {
+    background: #616161; /* Slightly lighter hover effect */
+}
+
+#bnt-restart:active {
+    background: #757575; /* Active state */
+}
+
+#bnt-restart:disabled {
+    color: #888; /* Disabled text */
+    background: #333; /* Disabled background */
+}
