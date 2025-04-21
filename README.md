@@ -1,5 +1,5 @@
 # Tic Tac Toe with AI (Alpha-Beta Pruning)
-### Click [here](https://ornate-flan-5614d6.netlify.app) to enjoy the web version.
+### Click [here](singular-marshmallow-9ac0f4.netlify.app) to enjoy the web version.
 This project is a classic **Tic Tac Toe** game where the user plays against an **unbeatable AI** powered by the **Minimax algorithm with Alpha-Beta Pruning**. The game features a clean graphical interface built using **Pygame**, and the AI is designed to **never lose** — it will either win or force a draw every time.
 
 ## Features
